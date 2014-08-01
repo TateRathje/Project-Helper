@@ -46,10 +46,19 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-.jumbotron .btn {
+#btn {
   font-size: 21px;
   padding: 14px 24px;
 }
+
+#request {
+padding: 10px;
+margin-bottom: 30px;
+color: inherit;
+background-color: #eee;
+}
+
+
 
 /* Supporting marketing content */
 .marketing {
