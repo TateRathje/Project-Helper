@@ -1,39 +1,23 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name projectHelperApp
- * @description
- * # projectHelperApp
- *
- * Main module of the application.
- */
-angular
-  .module('projectHelperApp', [
+
+/*Main App Module*/
+angular.module('helperApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/help-request', {
-        templateUrl: 'views/help-request.html',
-        controller: 'HelpRequestCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    'ngTouch',
+    'ui.router',
+    'helperApp.routes'
+  ]);
+
+/* User Profile Module */
+angular.module('userForm', [
+    'ngAnimate', 
+    'ui.router', 
+    'userForm.routes'
+]);
 
 
