@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name projectHelperApp.controller:AboutCtrl
- * @description
- * # HelpRequestCtrl
- * Controller of the projectHelperApp
- */
-angular.module('projectHelperApp')
+angular.module('helperApp')
   .controller('HelpRequestCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -15,3 +8,4 @@ angular.module('projectHelperApp')
       'Karma'
     ];
   });
+

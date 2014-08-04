@@ -3,18 +3,17 @@
 
 /*Main App Module*/
 angular.module('helperApp', [
+    'ui.router',
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router',
     'helperApp.routes'
   ]);
 
 /* User Profile Module */
-angular.module('userForm', [
+angular.module('userProfile', [
     'ngAnimate', 
     'ui.router', 
     'userForm.routes'

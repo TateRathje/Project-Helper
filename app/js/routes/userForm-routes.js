@@ -10,7 +10,7 @@ angular.module('userForm.routes', [] )
 		// route to show our basic form (/form)
 		.state('form', {
 			url: '/form',
-			templateUrl: 'form.html',
+			templateUrl: 'partials/form.html',
 			controller: 'formController'
 		})
 
@@ -20,24 +20,24 @@ angular.module('userForm.routes', [] )
 
 		.state('form.profile', {
 			url: '/profile',
-			templateUrl: 'form-profile.html'
+			templateUrl: 'partials/user-form-profile.html'
 		})
 
 		// url will be /form/skills
 
 		.state('form.skills', {
 			url: '/skills',
-			templateUrl: 'form-skills.html'
+			templateUrl: 'partials/user-form-profile.html'
 		})
 
 		// url will be /form/help
 
 		.state('form.help', {
 			url: '/help',
-			templateUrl: 'form-help.html'
+			templateUrl: 'partials/user-form-help.html'
 		});
 
 		// catch all route
 		// send users to the form page
-		$urlRouterProvider.otherwise('/form/profile');
+		$urlRouterProvider.otherwise('/partials/user/form/profile.html');
 })
