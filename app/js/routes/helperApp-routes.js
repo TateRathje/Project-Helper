@@ -27,6 +27,12 @@ angular.module('helperApp.routes', [] )
       url: '/members',
       templateUrl: 'views/members.html',
       controller: 'FormCtrl'
+    })
+
+    .state('community', {
+      url: '/community',
+      templateUrl: 'views/community.html',
+      controller: ' '
     });
 
     // catch all route

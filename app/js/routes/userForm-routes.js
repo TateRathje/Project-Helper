@@ -11,7 +11,7 @@ angular.module('userForm.routes', [] )
 		.state('form', {
 			url: '/form',
 			templateUrl: 'partials/form.html',
-			controller: 'formController'
+			controller: 'FormCtrl'
 		})
 
 		// nested states
