@@ -20,4 +20,3 @@ angular.module('userProfile', [
     'userForm.routes'
 ]);
 
-

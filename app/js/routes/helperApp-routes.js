@@ -11,16 +11,22 @@ angular.module('helperApp.routes', [] )
       controller: 'MainCtrl'
     })
 
-    .state('/help-request', {
+    .state('help-request', {
       url: '/help-request',
       templateUrl: 'views/help-request.html',
       controller: 'HelpRequestCtrl'
     })
 
-    .state('/about', {
+    .state('about', {
       url: '/about',
       templateUrl: 'views/about.html',
       controller: 'AboutCtrl'
+    })
+
+    .state('members', {
+      url: '/members',
+      templateUrl: 'views/members.html',
+      controller: 'FormCtrl'
     });
 
     // catch all route
