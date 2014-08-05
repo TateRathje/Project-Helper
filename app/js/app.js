@@ -9,7 +9,8 @@ angular.module('helperApp', [
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'helperApp.routes'
+    'helperApp.routes',
+    'userProfile'
   ]);
 
 /* User Profile Module */

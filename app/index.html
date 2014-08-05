@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->   
+    <link rel="stylesheet" href="styles/form.css">   
   </head>
   <body ng-app="helperApp">
   
@@ -18,13 +18,10 @@
           <li class="active"><a ng-href="#">Home</a></li>
           <li><a ng-href="#/about">Help Needed</a></li>
           <li><a ng-href="#/help-request">Help Request</a></li>
-          <li><a ng-href="#/help-request">User Profile</a></li>
+          <li><a ng-href="#/form/profile">User Profile</a></li>
         </ul>
         <h3 class="text-muted">Helper</h3>
       </div>
-
-      <!-- ng-views -->
-      <div ng-view=""></div>
 
       <!-- ui-router -->
       <div ui-view></div>
@@ -61,9 +58,14 @@
     
         <script src="js/app.js"></script>
         <script src="js/controllers/main.js"></script>
+        <script src="js/controllers/help-request.js"></script>
         <script src="js/controllers/about.js"></script>
+        <script src="js/controllers/user-profile.js"></script>
         <script src="js/routes/helperApp-routes.js"></script>
         <script src="js/routes/userForm-routes.js"></script>
         
 </body>
 </html>
+
+
+

@@ -3,7 +3,7 @@ angular.module('userForm.routes', [] )
 // configuring out routes
 // ==========================================
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider) {
 
 	$stateProvider
 
@@ -20,24 +20,21 @@ angular.module('userForm.routes', [] )
 
 		.state('form.profile', {
 			url: '/profile',
-			templateUrl: 'partials/user-form-profile.html'
+			templateUrl: 'partials/form-profile.html'
 		})
 
 		// url will be /form/skills
 
 		.state('form.skills', {
 			url: '/skills',
-			templateUrl: 'partials/user-form-profile.html'
+			templateUrl: 'partials/form-skills.html'
 		})
 
 		// url will be /form/help
 
 		.state('form.help', {
 			url: '/help',
-			templateUrl: 'partials/user-form-help.html'
+			templateUrl: 'partials/form-help.html'
 		});
-
-		// catch all route
-		// send users to the form page
-		$urlRouterProvider.otherwise('/partials/user/form/profile.html');
-})
+		
+});
