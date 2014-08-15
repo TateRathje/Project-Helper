@@ -25,7 +25,7 @@ angular.module('myAppApp')
       .state('form', {
       url: '/form',
       templateUrl: 'app/account/signup2/form.html',
-      controller: 'FormCtrl'
+      controller: 'SignupCtrl'
     })
 
     // nested states

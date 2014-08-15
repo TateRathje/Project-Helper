@@ -1,12 +1,9 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container-fluid" ng-controller='FormCtrl'>
-  <div ng-repeat="user in users">
+<div class="container-fluid">
+  <div ng-repeat="user in SignupCtrl.user">
     <p>{{user.name}}</p>
     <p>{{user.email}}</p>
-    <p>{{user.phone}}</p>
-    <p>{{user.rating}}</p>
-    <p>{{user.help}}</p>
     <p>{{user.skills}}</p>
     <hr>
   </div>

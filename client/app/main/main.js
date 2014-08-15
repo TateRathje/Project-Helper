@@ -23,7 +23,7 @@ angular.module('myAppApp')
       .state('members', {
         url: '/members',
         templateUrl: 'app/main/members/members.html',
-        controller: '',
+        controller: 'SignupCtrl',
         authenticate: false   
       });
   });
